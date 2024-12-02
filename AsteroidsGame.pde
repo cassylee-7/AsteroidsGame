@@ -24,16 +24,16 @@ public void draw() {
 }
 
 public void keyPressed() {
-  if (key == 'b') {
+  if (key === 'b') {
     asher.hyperspace();
   }
-  if (key == 'a') {
+  if (key === 'a') {
     asher.turnLeft();
     }
-  if (key == 'd') {
+  if (key === 'd') {
     asher.turnRight();
   }
-  if (key == 'w') {
+  if (key === 'w') {
     asher.accelerate(1);
     asher.move();
   }
