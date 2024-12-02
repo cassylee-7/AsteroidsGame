@@ -20,12 +20,10 @@ class Spaceship extends Floater {
   }
   
   public void turnLeft() {
-    translate((float)myCenterX, (float)myCenterY);
     myPointDirection -= 10;
   }
   
   public void turnRight() {
-    translate((float)myCenterX, (float)myCenterY);
     myPointDirection += 10;
   }
   
