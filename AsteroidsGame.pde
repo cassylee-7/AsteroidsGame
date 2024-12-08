@@ -9,9 +9,8 @@ public void setup() {
   for (int i = 0; i < night.length; i++) 
     night[i] = new Star();
 
-  for (int i = 0; i < 20; i++) {
+  for (int i = 0; i < 20; i++) 
     Aster.add(i, new Asteroid());
-  }
 }
 
 public void draw() {
@@ -25,7 +24,7 @@ public void draw() {
   for (int i = 0; i < Aster.size(); i++) {
     double l = dist((float)asher.getCenterX(), (float)asher.getCenterY(), (float)Aster.get(i).getCenterX(), (float)Aster.get(i).getCenterY());
   
-    if (l > 19) {
+    if (l > 20) {
       Aster.get(i).show();
       Aster.get(i).move();
     } else {
@@ -39,16 +38,16 @@ public void draw() {
 public void keyPressed() {
   if (key == 'b') {
     asher.hyperspace();
-    int i;
-    for (i = Aster.size(); i < 20; i++) {
-      Aster.add(i, new Asteroid());
-    }
+    //int i;
+    //for (i = Aster.size(); i < 20; i++) {
+      //Aster.add(i, new Asteroid());
+    //}
   }
   if (key == 'a') {
-    asher.turnLeft();
+    asher.turn(-10);
     }
   if (key == 'd') {
-    asher.turnRight();
+    asher.turn(10);
   }
   if (key == 'w') {
     asher.accelerate(1);
