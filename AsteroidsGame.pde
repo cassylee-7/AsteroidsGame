@@ -1,6 +1,6 @@
 Star [] night = new Star [250];
 Spaceship asher = new Spaceship();
-ArrayList <Asteroid> Aster = new ArrayList <Asteroid> ();
+ArrayList <Asteroid> Aster = new ArrayList <Asteroid>();
 
 public void setup() {
   size(400, 400);
