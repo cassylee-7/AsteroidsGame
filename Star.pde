@@ -6,7 +6,8 @@ class Star {
   }
  
   public void show() {
-    fill(color(255, 255, 255));
+    noStroke();
+    fill(color((int)(Math.random()*100) + 50, (int)(Math.random()*100) + 50, (int)(Math.random()*100) + 50));
     ellipse(myX, myY, 3, 3);
   }
 }
