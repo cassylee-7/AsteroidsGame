@@ -9,7 +9,6 @@ class Asteroid extends Floater {
     myCenterY = (int)(Math.random()*400);
     myXspeed = (Math.random()*10) - 5;
     myYspeed = (Math.random()*10) - 5;
-    //myPointDirection = Math.random()*360;
     rotateSpeed = (Math.random()*16) - 8;
   }
   
